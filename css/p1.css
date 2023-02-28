@@ -1,0 +1,16 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: board-box;
+    font-family: 'poppins', Arial, Helvetica, sans-serif;
+
+}
+.A{
+   width: 100%;
+   min-height: 100vh;
+   background-image: url(image/abc.jpg);
+   background-position:center;
+   background-size: cover;
+   padding: 10px 10%;
+   overflow: hidden;
+}

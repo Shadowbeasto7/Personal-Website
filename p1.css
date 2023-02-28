@@ -1,0 +1,256 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+
+}
+:root{
+    --background-color: #fff;
+    --text-color: rgb(252, 248, 248);
+    --title-color: #555;
+
+}
+
+
+.A{
+   width: 100%;
+   height: 100vh;
+   background-image: url(image/fil.jpg);
+   background-position:center;
+   background-size: cover;
+   padding: 10px  10%;
+   overflow: hidden;
+   
+}
+.raindrop {
+    position: absolute;
+    width: 2px;
+    height: 3px;
+    border-radius: 2px 2px;
+    background-color: rgb(255, 255, 255);
+    animation: raindrop 7s linear infinite;
+    grid-template-areas: inherit;
+    
+}
+
+@keyframes raindrop {
+    0% { top: 0%; }
+    100% { top: 100%; }
+}
+
+
+nav{
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav a img{
+    height:100%;
+    width: 230px;
+    border-radius: 300px;
+}
+nav ul{
+    width: 100%;
+    text-align: right;
+    list-style:none;
+    margin-right: 50px;
+
+}
+nav ul li{
+    display: inline-block ;
+    list-style:none;
+    margin: 5px 15px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color:var(--text-color);
+    font-weight:500;
+    position: relative;
+}
+nav ul li a::after{
+
+   content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform:translateX(-50%) ;
+    background: white;
+    transition: width 0.4s;
+
+}
+nav ul li a:hover::after
+{
+    width: 90%;
+}
+
+.content{
+    margin-top:10;
+    max-width:600px;
+}
+.content h1{
+    font-size:80px;
+    font-family: serif;
+    color:floralwhite;
+    font-weight: 600;
+}
+.content p{
+    color: #fff;
+}
+.content h1 span{
+    font-family: serif;
+    font-weight: 400;
+    font-style:italic;
+    
+}
+.content a{
+    background: #0053f9 ;
+    color:rgb(248, 248, 248);
+    padding:15px 70px;
+    border-radius:30px;
+    cursor:pointer;
+    display: inline-block;
+    margin-top:30px;
+    text-decoration:none;
+}
+.Experience{
+    width: 100%;
+    height:80vh ;
+   margin:auto;
+   text-align: center;
+   padding-top: 100px;
+}
+h1{
+
+    font-size: 36px;
+    font-weight: 600;
+
+}
+p{
+    color:rgb(18, 1, 1);
+    font-size: 14px;
+    font-weight: 300;
+    line-height:22px;
+    padding:10px;
+}  
+    
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.cool{
+    flex-basis: 31%;
+    background:  #0053f9;
+    border-radius:10px;
+    margin-bottom:5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+h2{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.cool:hover{
+    box-shadow: 0 0 20px 9px  #0053f9;
+}
+@media(max-width:720pX)
+{   
+     .content h1{
+    font-size: 20px;
+}    .content h5{
+    font-size: 15px;}
+   .content ul li{
+    display: block ;
+   }
+   
+    .row{
+        flex-direction: column;
+    }
+}
+.working-on{
+    width: 100%;
+    height: 80vh;
+    margin:auto;
+    text-align: center;
+    padding-top: 50px;
+    background-image:url(image/blacck.jpg);
+    background-position:center;
+    background-size: cover;
+    color: #fff;
+
+}
+.coole{
+    flex-basis: 32%;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    position: relative;
+    padding: 20px 20px;
+    overflow: hidden;
+
+}
+.coole img{
+    width: 100%;
+    display: block;
+}
+.layer{
+    background:transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    transition: 0.05s;
+    
+}
+.layer:hover{
+    background-color: #0053f9;
+}
+.content h5{
+        font-size: 140px;
+        line-height: 190px;
+        width: 900px;
+        margin-left: -17px;
+        color: transparent;
+        -webkit-text-stroke: 1px  #0053f9;
+        background: url(image/images/back.png);
+        -webkit-background-clip : text;
+        background-position: 0 0;
+        animation: back 23s linear infinite;
+}
+@keyframes back{
+    100%{
+        background-position: 2000px 0;
+    }
+}
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    bottom:50%;
+    left: 50%;
+    transform: translateX(-50%);
+    position:absolute;
+    opacity: 0;
+    transition: 0.05s;
+
+}
+.layer:hover h3{
+    width:100%;
+    bottom: 50%;
+    opacity:1;
+    color: rgb(211, 198, 198);
+    font-size: 14px;
+}
+
+
+
+  
+  
+  
